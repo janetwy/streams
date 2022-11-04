@@ -1,12 +1,9 @@
 import React from "react";
 import { connect } from 'react-redux';
-import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
 
 import { signIn, signOut } from '../actions';
 
 class GoogleAuth extends React.Component {
-	// state = { isSignedIn: null };
-
 	componentDidMount() {
 		// loads client library from Google Servers
 		window.gapi.load('client:auth2', () => {
